@@ -18,7 +18,7 @@ App.MapGet("/",
 //In the /POST link of the page, you need to insert the values you of the buckets
 // example: localhost:55067/POST?num1=35&num2=45&amount=55
 App.MapPost("/POST",
-    (string num1, string num2, string amount) => Solution(num1, num2, amount)
+    (string bucketX, string bucketY, string target) => Solution(bucketX, bucketY, target)
     ); ;
 
 

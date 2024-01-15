@@ -53,6 +53,8 @@ namespace BucketChallenge
                     iteration(bucketY, bucketX, amount);
 
                 }
+            } else if (bucketX.BucketLimit == 0 || bucketY.BucketLimit == 0 || amount == 0){
+                steps.Add("Invalid input. The values must be integers greater or equal to 1.");
             }
             else
             {
@@ -124,7 +126,12 @@ namespace BucketChallenge
                 }
 
                 ++iterations;
-
+                //Safety net
+                if (iterations >= 20) {
+                    steps.Clear();
+                    steps.Add("No solution");
+                    break;
+                }
             }
         }
 
