@@ -43,8 +43,8 @@ git clone https://github.com/LuisCebNu/BucketChallenge.git
 ```
 
 Open it and build it on Visual Studio:
-![alt text](https://github.com/LuisCebNu/BucketChallenge/Images/master/solutionexplorer.png?raw=true)
-![alt text](https://github.com/LuisCebNu/BucketChallenge/Images/master/build.png?raw=true)
+![alt text](https://github.com/LuisCebNu/BucketChallenge/master/Images/solutionexplorer.png?raw=true)
+![alt text](https://github.com/LuisCebNu/BucketChallenge/master/Images/build.png?raw=true)
 
 After that, just press F5 or the Run button and you should be ready to go!
 
@@ -62,9 +62,9 @@ POST
 ## Test API in Postman
 ***
 Use the provided URL and add the variables the following way
-bucketX={size of bucket}&bucketY={size of bucket}&target={desired target}
+bucketX={size of bucket}&bucketY={size of bucket}&target={desired target}.
 
-![alt text](https://github.com/LuisCebNu/BucketChallenge/Images/master/postman.png?raw=true)
+![alt text](https://github.com/LuisCebNu/BucketChallenge/master/Images/postman.png?raw=true)
 
 
 #### Note
