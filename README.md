@@ -43,8 +43,8 @@ git clone https://github.com/LuisCebNu/BucketChallenge.git
 ```
 
 Open it and build it on Visual Studio:
-![[Pasted image 20240114230258.png]]
-![[Pasted image 20240114230436.png]]
+![alt text](https://github.com/LuisCebNu/BucketChallenge/Images/solutionexplorer.png?raw=true)
+![alt text](https://github.com/LuisCebNu/BucketChallenge/Images/build.png?raw=true)
 
 After that, just press F5 or the Run button and you should be ready to go!
 
@@ -62,64 +62,91 @@ POST
 ## Test API in Postman
 ***
 Use the provided URL and add the variables the following way
-bucketX={size of bucket}&bucketY={size of bucket}&target={desired target}![[Pasted image 20240114231142.png]]
+bucketX={size of bucket}&bucketY={size of bucket}&target={desired target}
+
+![alt text](https://github.com/LuisCebNu/BucketChallenge/Images/postman.png?raw=true)
+
+
 #### Note
 I couldn't figure out why my computer didn't let me run the xUnit test. But I tested with the following cases:
 
 ##### Case 1
-**Bucket X:** 0
-**Bucket Y:** 0
-**Amount wanted Z:** 0
-
+```
+	**Bucket X 0
+	**Bucket Y 0
+	**Amount wanted Z 0
+```
 ##### Result
-["Invalid input. The values must be integers greater or equal to 1."]
-##### Case 1
-**Bucket X:** 2
-**Bucket Y:** 6
-**Amount wanted Z:** 5
-##### Result
-["No Solution"]
+```["Invalid input. The values must be integers greater or equal to 1."]```
 
 ##### Case 2
-**Bucket X:** 10
-**Bucket Y:** 50
-**Amount wanted Z:** 40
+```
+	**Bucket X 2
+	**Bucket Y 6
+	**Amount wanted Z 5
+```
 ##### Result
-["Bucket Y is Fill : 50","Bucket Y transfer to Bucket X: X: 10 Y: 40","SOLVED"]
-
+```
+	["No Solution"]
+```
 
 ##### Case 3
-**Bucket X:** 30
-**Bucket Y:** 100
-**Amount wanted Z:** 50
+```
+	**Bucket X 10
+	**Bucket Y 50
+	**Amount wanted Z 40
+```
 ##### Result
-["No solution"]
+```
+	["Bucket Y is Fill : 50","Bucket Y transfer to Bucket X: X: 10 Y: 40","SOLVED"]
+```
 
 ##### Case 4
-**Bucket X:** 10
-**Bucket Y:** 40
-**Amount wanted Z:** 50
+```
+	**Bucket X 30
+	**Bucket Y 100
+	**Amount wanted Z 50
+```
 ##### Result
-["No solution"]
+```
+	["No solution"]
+```
 
 ##### Case 5
-**Bucket X:** 500
-**Bucket Y:** 100
-**Amount wanted Z:** 200
+```
+	**Bucket X 10
+	**Bucket Y 40
+	**Amount wanted Z 50
+```
 ##### Result
-[
-    "Bucket Y is Fill : 100",
-    "Bucket Y transfer to Bucket X: X: 100 Y: 0",
-    "Bucket Y is Fill : 100",
-    "Bucket Y transfer to Bucket X: X: 200 Y: 0",
-    "SOLVED"
-]
+```
+	["No solution"]
+```
 
 ##### Case 6
-**Bucket X:** -10
-**Bucket Y:** 30
-**Amount wanted Z:** 20
+```
+	**Bucket X 500
+	**Bucket Y 100
+	**Amount wanted Z 200
+```
 ##### Result
-["Invalid input. The values must be integers greater or equal to 1."]
+```
+	[
+		"Bucket Y is Fill : 100",
+		"Bucket Y transfer to Bucket X: X: 100 Y: 0",
+		"Bucket Y is Fill : 100",
+		"Bucket Y transfer to Bucket X: X: 200 Y: 0",
+		"SOLVED"
+	]
+```
 
-
+##### Case 7
+```
+	Bucket X -10
+	Bucket Y 30
+	Amount wanted Z 20
+```
+##### Result
+```
+	["Invalid input. The values must be integers greater or equal to 1."]
+```
